@@ -1,0 +1,264 @@
+<html>
+    <title>
+        document
+    </title>
+    <head>
+      <style>
+        /* body{
+            align-items: center;
+            padding: 200px;
+            padding-left: 400px ; 
+        }
+
+        button{
+            height: 80px;
+            width: 200px;
+            color: blue;
+            background-color: rgb(44, 241, 5);
+            display: flex;
+            border-radius: 6px;
+            text-align: center;
+            align-items: center;
+            padding: 40px;
+            font-size: 30px;
+            border-width: 3px;
+            border-style: solid;
+            
+        }
+        button:hover{
+            background-color: #fa07d9;
+        }
+        h1{
+            background-color: #fa0707;
+            color: rgb(19, 19, 241);
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            font: 4rem sans-serif;
+        } */
+      </style> 
+    </head>
+    <body>
+        <!-- <button  onclick="add()">Addition</button>
+        <button  onclick="sub()">Subtraction</button>
+        <button  onclick="mul()">Multiplication</button>
+        <button  onclick="div()">division</button>
+        <button  onclick="oddEven()">check</button>
+        <button  onclick="fact()">Factorial</button> -->
+        <!-- <h1 id="h">hii</h1>
+        
+        <button id="s" onclick="fun()">
+            submit
+        </button>
+        <script>
+    function fun()
+    {
+        let p=document.getElementById("s")
+
+        p.textContent="pooja"
+      let h=  document.getElementById("h")
+      h.textContent="hello"
+    } -->
+      <!-- <input type="text" placeholder="Enter the radius" id="r">
+      <button id="h" onClick="area()">get area</button> -->
+      <!-- <button id="t" onclick="inc()">INC</button><br><br>
+      <button id="s" onClick="dec()">DEC</button> -->
+      <!-- <h1>Random number generated</h1>
+      <button id="z" onClick="ram()">
+        Random Number
+      </button> -->
+
+
+      <script>
+// function add()
+// {
+//     let a=Number(window.prompt("enter  1st the number"))
+//     let b=Number(window.prompt("enter 2nd the number"))
+//     let res=a+b
+//     console.log(res)
+//     document.write("result=" + res)
+// }
+// function sub()
+// {
+//     let a=Number(window.prompt("enter  1st the number"))
+//     let b=Number(window.prompt("enter 2nd the number"))
+//     let res=a-b
+//     console.log(res)
+//     document.write("result=" + res)
+// }
+// function mul()
+// {
+//     let a=Number(window.prompt("enter  1st the number"))
+//     let b=Number(window.prompt("enter 2nd the number"))
+//     let res=a*b
+//     console.log(res)
+//     document.write("result=" + res)
+// }
+// function div()
+// {
+//     let a=Number(window.prompt("enter  1st the number"))
+//     let b=Number(window.prompt("enter 2nd the number"))
+//     if(b===0)
+//     {
+//         document.write("division is not possible")
+//     }
+//     else{
+//         let res=a/b
+//     console.log(res)
+//     document.write("result=" + res)
+//     }
+//     let res=a+b
+//     console.log(res)
+//     document.write("result=" + res)
+// }
+// function oddEven()
+// {
+//     let a=Number(window.prompt("enter  1st the number"))
+//     if(a%2==0)
+//     {
+//         document.write("even number")
+
+//     }
+//    else{
+//     document.write("odd number")
+//    }
+// }
+// function fact()
+// {
+//     let a=Number(window.prompt("entre the number"))
+//     let f=1;
+//     for(let i=1;i<=a;i++)
+//     {
+//         f=f*i;
+//     }
+//     document.write("result:" + f)
+// }
+// const s=3.14
+// function area()
+// {
+//     let f=document.getElementById("r").value
+//     let res=s*f*f
+//     document.write("area is:" +Math.ceil(res) + " sq")
+// }
+// let x=40
+// let y=20
+// let z=10
+// let res=(Math.max(x,y,z))
+// document.write(res)
+// let min=2
+// let max=100
+// let ra=(Math.floor(Math.random()*(max-min)+min))
+// document.write(ra)
+// let a=false
+// let s=a?"you are old":"you are adult"
+// {
+//      document.write(s)
+//  }
+// let d=2;
+// switch(d){
+//     case 1:document.write("it is Monday")
+//            break;
+//     case 2:document.write("it is wednesday")
+//            break;
+// }
+// let userName="bro code"
+// document.write (userName.includes(" "));
+//
+// let ph="12-7-899"
+// ph=ph.replaceAll("-","/");
+// document.write(ph)
+// let s="sushmitha h y"
+// document.write(s.slice(-1))
+// let st = "sushmitha";
+// document.write(st.padEnd(13, "p")); // This will output "ddsus"
+// let f = "www@12gmail.com";
+// document.write(f.slice(f.indexOf("@"),7));
+// let s="  gdfjhcn  "
+// document.write(s.trim())
+// let p=7+7+s+9
+
+// document.write(p)
+// document.write(s.charAt(4))
+// let c=0
+// function inc()
+// {
+// let s=document.getElementById("t")
+// s.textContent=c;
+// c=c+1;
+// }
+// function dec()
+// {
+// let k=document.getElementById("s")
+// k.textContent=c;
+// c=c-1;
+// // }
+// fnuction ram() {
+//     let p = document.getElementById("z");
+//     p.textContent = Math.floor(Math.random() *1001); // Random number between 0 and 100
+// function helo(callback,x,y)
+// {
+//   let res=x+y;
+//   callback(res);
+// }
+// function display(res)
+// {
+//   document.write("result:" + res)
+// }
+// helo(display,4,9);
+
+// function display(accumulator,ele)
+//       {
+//         document.writ(Math.min(accumulator,ele))
+        
+//       }
+// let s = [1, 3, 2, 4, 6];
+// document.write(s.length + "<br>");
+
+// let p = 0;
+// function sum(ele) {
+//   let d;
+// d=Math.pow(ele,2)
+// document.write(d + "<br>");
+
+// }
+// s.forEach(sum);
+// let d=[2,4,3,1,5,,7,8,0]
+// let s=0;
+// function evenSum(ele)
+// {
+//   if(ele%2!==0)
+//   {
+//     s=s+ele;
+//   }
+  
+// }
+// d.filter(evenSum);
+// document.write(s)
+// setTimeout(()=>
+// {
+//   document.write("hello")
+// },5000)
+const p={
+  name:"sushmitha",
+  age:22,
+  branch:"cs",
+  college:"pesce",
+  details:function()
+  {
+console.log(this.name)
+console.log(this.age)
+console.log(this.branch)
+console.log(this.college)
+  }
+};
+p.details();
+document.write("name is:" + p.name + "<br>")
+document.write(p.age + "<br>")
+document.write(p.branch + "<br>")
+document.write(p.college + "<br>")
+
+
+
+
+      </script>
+  
